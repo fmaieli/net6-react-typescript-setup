@@ -1,3 +1,0 @@
-# NetCore.Web.Front
-
-
