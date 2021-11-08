@@ -12,7 +12,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4532c3c9-6685-4391-9f64-70e7b0873eef</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>server.ts</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <StartWebBrowser>True</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -31,10 +32,41 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="server.ts" />
-    <Content Include="tsconfig.json" />
+    <Content Include=".gitignore" />
+    <Content Include="babel.config.js" />
+    <Content Include="index.html" />
     <Content Include="package.json" />
+    <Content Include="postcss.config.js" />
     <Content Include="README.md" />
+    <Content Include="src\App.css" />
+    <Content Include="src\favicon.svg" />
+    <Content Include="src\index.css" />
+    <Content Include="src\logo.svg" />
+    <Content Include="tailwind.config.js" />
+    <Content Include="tests\jest.config.js" />
+    <Content Include="tests\mocks\fileMock.js" />
+    <Content Include="tests\mocks\styleMock.js" />
+    <Content Include="tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="setupEnzyme.ts" />
+    <TypeScriptCompile Include="src\App.tsx" />
+    <TypeScriptCompile Include="src\main.tsx" />
+    <TypeScriptCompile Include="src\vite-env.d.ts" />
+    <TypeScriptCompile Include="tests\App.test.tsx" />
+    <TypeScriptCompile Include="tests\jest.setup.ts" />
+    <TypeScriptCompile Include="vite.config.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="src\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\layout\" />
+    <Folder Include="src\model\" />
+    <Folder Include="src\pages\" />
+    <Folder Include="tests\" />
+    <Folder Include="tests\mocks\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
